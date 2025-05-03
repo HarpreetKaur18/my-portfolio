@@ -1,40 +1,70 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# 💫 Harpreet Kaur — Personal Portfolio
 
-## Getting Started
+Welcome to my portfolio website! This is a sleek, dark-themed personal site showcasing my work as a **Software Engineer**, **QA Analyst**, and **MS CS Graduate**. Designed with love using **Next.js**, **Tailwind CSS**, and deployed on **Vercel**.
 
-First, run the development server:
+🔗 **Live Site**: [my-personal-portfolio-sable-delta.vercel.app](https://my-personal-portfolio-sable-delta.vercel.app/)
 
-```bash
+---
+
+## 🌟 Features
+
+- ✨ Dark mode, elegant UI with framer-motion animations
+- 🎯 Clear intro with avatar and call-to-action
+- 💼 Projects section with GIF previews
+- 🧠 Tech stack split by category
+- 🎓 Education, Certifications & QA Experience
+- 📬 Contact form powered by Formspree
+
+---
+
+## 🛠 Tech Stack
+
+- **Frontend**: Next.js, Tailwind CSS, React
+- **Design**: Framer Motion, custom avatars, emoji icons
+- **Backend (Projects)**: Node.js, Flask, MongoDB
+- **Deployment**: Vercel
+
+---
+
+## 🚀 Projects Highlighted
+
+| Project Title                     | Tech Stack                                |
+|----------------------------------|--------------------------------------------|
+| Generative AI Content Platform   | Next.js, Hugging Face, MongoDB, AWS        |
+| Computer Vision Object Detection | Python, OpenCV, Flask, Hugging Face        |
+| Resume Screening System          | Python, NLP, React, MongoDB                |
+| Interview Practice Simulator     | React, Tailwind, Audio Recorder, Timer     |
+
+---
+
+## 🧑‍💻 About Me
+
+I’m a passionate developer who builds modern web apps and AI-powered tools with clean UI and impactful results. I'm actively looking for full-time roles in Software Development and QA Engineering.
+
+
+---
+
+## 📌 How to Run Locally
+
+
+git clone https://github.com/HarpreetKaur18/my-portfolio.git
+
+cd my-portfolio
+
+npm install
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+🙋‍♀️ Made By
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+Harpreet Kaur 💜
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+🔗 LinkedIn - www.linkedin.com/in/harpreet-kaur005
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+📫 Email - harpreetgill325@gmail.com
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+# 🎀 If this project inspired you or helped you build something awesome, consider giving it a ⭐ on GitHub!
