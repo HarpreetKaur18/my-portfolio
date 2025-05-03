@@ -513,65 +513,101 @@ export default function Home() {
   )}
 </nav>
 
-      {/* About Section */}
-      <section id="about" className="min-h-screen flex flex-col items-center justify-center text-center p-8 relative pt-20" style={{ zIndex: 10 }}>
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-          className="relative z-10"
-          style={{
-            // Limit the transform to prevent moving content too far
-            transform: `translateY(${Math.min(scrollY * 0.3, 200)}px)`,
-          }}
-        >
-          <div className="relative">
-            {/* This is the enhanced glowing border effect with more vibrant pink */}
-            <motion.div
-              className="absolute -inset-1 bg-gradient-to-r from-[#ff1a75] to-[#c4024f] rounded-lg blur-md opacity-90"
-              animate={{ 
-                opacity: [0.7, 0.9, 0.7],
-                rotate: [0, 0.5, 0]
-              }}
-              transition={{ 
-                duration: 3, 
-                repeat: Infinity,
-                repeatType: "reverse" 
-              }}
-            />
+      {/* About Section - Modified for side-by-side layout with avatar */}
+<section id="about" className="min-h-screen flex items-center justify-center p-8 relative pt-20" style={{ zIndex: 10 }}>
+  <motion.div
+    initial={{ opacity: 0, y: 50 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 1 }}
+    className="relative z-10 w-full max-w-7xl"
+    style={{
+      transform: `translateY(${Math.min(scrollY * 0.3, 200)}px)`,
+    }}
+  >
+    <div className="flex flex-col md:flex-row items-center justify-between gap-8">
+      {/* Left side - Text content */}
+      <div className="w-full md:w-3/5">
+        <div className="relative">
+          {/* Enhanced glowing border effect */}
+          <motion.div
+            className="absolute -inset-1 bg-gradient-to-r from-[#ff1a75] to-[#c4024f] rounded-lg blur-md opacity-90"
+            animate={{ 
+              opacity: [0.7, 0.9, 0.7],
+              rotate: [0, 0.5, 0]
+            }}
+            transition={{ 
+              duration: 3, 
+              repeat: Infinity,
+              repeatType: "reverse" 
+            }}
+          />
+          
+          {/* Main content card */}
+          <div className="relative px-8 py-10 bg-[#fff5f8]/90 backdrop-filter backdrop-blur-sm rounded-lg shadow-xl z-10">
+            <h1 className="text-xl md:text-5xl font-bold mb-2 text-[#ff1a75]">
+              Hi, I'm <span className="text-[#ff1a75]">Harpreet Kaur</span>
+            </h1>
+            <p className="text-xl text-[#ff1a75] mb-6">
+              Software Engineer | Software Quality Analyst | MS CS Graduate – CSULA
+            </p>
+            <p className="text-sm md:text-base text-[#ff1a75] leading-relaxed mb-6">
+              I'm a passionate Software Engineer with a Master's in Computer Science from CSULA and over 2 years of experience in software quality assurance. I specialize in full-stack development and AI/ML applications, leveraging tools like Python, JavaScript, and cloud platforms to build scalable, user-focused solutions. I'm currently seeking opportunities to contribute to innovative engineering teams and impactful products.
+            </p>
             
-            {/* Main content card */}
-<div className="relative px-12 py-10 bg-[#fff5f8]/90 backdrop-filter backdrop-blur-sm rounded-lg shadow-xl z-10">
-  <h1 className="text-xl md:text-6xl font-bold mb-2 text-[#ff1a75]">
-    Hi, I'm <span className="text-[#ff1a75]">Harpreet Kaur</span>
-  </h1>
-  <p className="text-xl text-[#ff1a75] mb-8">
-    Software Engineer | Software Quality Analyst | MS CS Graduate – CSULA
-  </p>
-  <p className="text-sm md:text-base text-[#ff1a75] leading-relaxed">
-    I'm a passionate Software Engineer with a Master's in Computer Science from CSULA and over 2 years of experience in software quality assurance. I specialize in full-stack development and AI/ML applications, leveraging tools like Python, JavaScript, and cloud platforms to build scalable, user-focused solutions. I'm currently seeking opportunities to contribute to innovative engineering teams and impactful products.
-  </p>
-              
+            <div className="flex justify-center">
               <Link href="#projects">
-                <button className="mt-6 px-10 py-4 bg-[#ff1a75] rounded-md text-white font-semibold transition-all hover:brightness-110 shadow-lg shadow-[#c4024f]">
+                <button className="px-8 py-3 bg-[#ff1a75] rounded-md text-white font-semibold transition-all hover:brightness-110 shadow-lg shadow-[#c4024f]">
                   View My Work
                 </button>
               </Link>
             </div>
           </div>
-        </motion.div>
+        </div>
+      </div>
+      
+      {/* Right side - Avatar */}
+      <div className="w-full md:w-2/5 flex justify-center">
+        <div className="relative">
+          {/* Glowing effect around the avatar */}
+          <motion.div
+            className="absolute inset-0 bg-gradient-to-r from-[#ff1a75] to-[#c4024f] rounded-xl blur-lg opacity-70"
+            animate={{ 
+              scale: [1, 1.05, 1],
+              opacity: [0.5, 0.7, 0.5]
+            }}
+            transition={{ 
+              duration: 4, 
+              repeat: Infinity,
+              repeatType: "reverse" 
+            }}
+            style={{ transform: 'scale(1.2)' }}
+          />
+          
+          {/* Avatar container */}
+          <div className="relative overflow-hidden rounded-xl shadow-xl z-10" style={{ width: '320px', height: '320px' }}>
+            {/* Avatar image - update the path to where you save your avatar */}
+            <img 
+              src="/videos/programmer-avatar.png" 
+              alt="Harpreet Kaur Avatar" 
+              className="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </motion.div>
 
-        {/* Scroll down indicator */}
-        <motion.div 
-          className="absolute bottom-10 left-1/2 transform -translate-x-1/2"
-          animate={{ y: [0, 10, 0] }}
-          transition={{ repeat: Infinity, duration: 1.5 }}
-        >
-          <svg className="w-6 h-10 text-[#ff1a75]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-          </svg>
-        </motion.div>
-      </section>
+  {/* Scroll down indicator - positioned lower */}
+  <motion.div 
+    className="absolute bottom-5 left-1/2 transform -translate-x-1/2"
+    animate={{ y: [0, 10, 0] }}
+    transition={{ repeat: Infinity, duration: 1.5 }}
+  >
+    <svg className="w-6 h-10 text-[#ff1a75]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+    </svg>
+  </motion.div>
+</section>
 
       {/* Experience Section */}
       <section id="experience" className="py-20 px-8 max-w-6xl mx-auto relative z-10" ref={experienceRef}>
