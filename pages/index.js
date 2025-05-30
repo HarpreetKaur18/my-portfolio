@@ -188,16 +188,15 @@ export default function Home() {
       company: "Open Access Technology, India",
       duration: "May 2021 - July 2023",
       description: [
-        "Architected automated testing pipeline using Selenium & Jenkins, reducing testing time by 40%.",
-        "Developed API testing strategy for microservices, improving data validation by 35%.",
-        "Executed regression and performance testing for web applications, reducing transaction errors by 20%.",
-        "Improved test case creation and bug tracking, boosting QA team efficiency by 15%.",
+        "Worked on various ETRM/CTRM related applications for Power, Gas, and Emission",
+        "Conducted multi-phase testing - Unit, Regression, Functional, Smoke, Sanity and Display for mission-critical energy trading platforms, ensuring high-quality releases across unit, pre-release (clone), and beta environments.",
+        "Created 200+ problems with detailed test plans, test cases, along with functional test plans.",
+        "Well-versed with QA processes, writing test cases, test scripts, defect management, and reporting to the Product Development Team, Product Owner, and Product Manager.",
         "Led knowledge transfer sessions on QA methodologies, increasing team competency by 25%."
       ],
       achievements: [
-        "Well-versed with QA processes, writing test cases, test scripts, defect management, and reporting to the Product Development Team, Product Owner, and Product Manager.",
-        "Conducted various Knowledge Transfer sessions (KTs) for commodities like Power, Gas, and Emission.",
-        "Nominated as Best Quality Tester in the probation period itself."
+        "Provided Knowledge Transfer Session and assistance to more than 7 employees in their on boarding process.",
+        "Nominated as Best Quality Tester in just 4th month of service."
       ]
     }
   ];
