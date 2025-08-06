@@ -44,13 +44,6 @@ I’m a passionate developer who builds modern web apps and AI-powered tools wit
 
 ---
 
-## 📸 Screenshot
-
-<img width="946" alt="image" src="https://github.com/user-attachments/assets/7d63057e-7ae2-4ea5-ab30-b8d17ac36f9c" />
-
----
-
-
 ## 📌 How to Run Locally
 
 
